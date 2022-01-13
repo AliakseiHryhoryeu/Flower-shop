@@ -1,7 +1,6 @@
-## Flowers-shop - Landing-page
+## Flowers-shop
 ### In this project i develop adaptive-responsive site, in this project i use:
-+ html/css and scss
-+ javascript
++ html/css, scss
++ Bootstrap 5
++ JavaScript
 
-
-![Flowers-shop - Landing-page](/preview.png)
