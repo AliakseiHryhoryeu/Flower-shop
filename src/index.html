@@ -21,40 +21,243 @@
 <body>
 
     <!--==================== HEADER ====================-->
-    <!-- <header class="header container-fluid">
-        <nav class="navbar">
-            <ul class="nav__">
-                <li class="nav__">
-                    <img src=<%=require("@img/favicon.png" )%> alt="favicon.png">
-                    <span nav__title>Flower Shop</span>
-                </li>
-            </ul>
-            <ul class="nav__">
-                <li class="nav__">Flowers</li>
-                <li class="nav__">Plants</li>
-                <li class="nav__">Gifts</li>
-                <li class="nav__">Disconts</li>
-                <li class="nav__">About us</li>
-            </ul>
-            <ul class="nav__">
-                <li class="nav__"><img src=<%=require("@img/header-search.png" )%> alt="header-search.png""></li>
-                <li class="nav__"><img src=<%=require("@img/header-cart.png" )%> alt="header-cart.png"></li>
-            </ul>
-        </nav>
-    </header> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand col">
+                <img width="24" height="24" src=<%=require("@img/favicon.png" )%> alt="favicon.png">
+                Flower Shop</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav col">
+                    <a href="#" class="nav-item nav-link">Flowers</a>
+                    <a href="#" class="nav-item nav-link">Plants</a>
+                    <a href="#" class="nav-item nav-link">Gifts</a>
+                    <a href="#" class="nav-item nav-link">Disconts</a>
+                    <a href="#" class="nav-item nav-link">About us</a>
+                </div>
+                <div class="navbar-nav col">
+                    <a href="#" class="nav-item nav-link ms-lg-auto"><img src=<%=require("@img/header-search.png" )%>
+                        alt=""></a>
+                    <a href="#" class="nav-item nav-link"><img src=<%=require("@img/header-cart.png" )%> alt=""></a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-    <nav class="navbar ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+    <!--==================== GALLERY ====================-->
+
+
+    <section class="gallery container-fluid bg-light">
+        <div class="container-xxl">
+            <div class="gallery__title">
+                <h3>New</h3>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselNewProducts"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    Previous
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselNewProducts"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    Next
+                </button>
+            </div>
+            <div id="carouselNewProducts" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src=<%=require("@img/product-1.png" )%> class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Roses</h5>
+                                        <p class="card-text">50$ <s>75$</s></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src=<%=require("@img/product-2.png" )%> class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Phalaenopsis</h5>
+                                        <p class="card-text">50$ <s>75$</s></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src=<%=require("@img/product-3.png" )%> class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Nefelejcs</h5>
+                                        <p class="card-text">50$ <s>75$</s></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src=<%=require("@img/product-4.png" )%> class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cream roses</h5>
+                                        <p class="card-text">50$ <s>75$</s></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src=<%=require("@img/product-5.png" )%> class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Roses</h5>
+                                        <p class="card-text">50$ <s>75$</s></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src=<%=require("@img/product-6.png" )%> class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Phalaenopsis</h5>
+                                        <p class="card-text">50$ <s>75$</s></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src=<%=require("@img/product-7.png" )%> class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Nefelejcs</h5>
+                                        <p class="card-text">50$ <s>75$</s></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src=<%=require("@img/product-8.png" )%> class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cream roses</h5>
+                                        <p class="card-text">50$ <s>75$</s></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-      </nav>
-      
-      <!-- As a heading -->
-      <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1">Navbar</span>
+    </section>
+    <section class="gallery container-fluid bg-light">
+        <div class="container-xxl">
+            <div class="gallery__title">
+                <h3>Relevant</h3>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselNewProducts"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    Previous
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselNewProducts"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    Next
+                </button>
+            </div>
+            <div id="carouselNewProducts" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src=<%=require("@img/product-1.png" )%> class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Roses</h5>
+                                        <p class="card-text">50$ <s>75$</s></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src=<%=require("@img/product-2.png" )%> class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Phalaenopsis</h5>
+                                        <p class="card-text">50$ <s>75$</s></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src=<%=require("@img/product-3.png" )%> class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Nefelejcs</h5>
+                                        <p class="card-text">50$ <s>75$</s></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src=<%=require("@img/product-4.png" )%> class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cream roses</h5>
+                                        <p class="card-text">50$ <s>75$</s></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src=<%=require("@img/product-5.png" )%> class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Roses</h5>
+                                        <p class="card-text">50$ <s>75$</s></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src=<%=require("@img/product-6.png" )%> class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Phalaenopsis</h5>
+                                        <p class="card-text">50$ <s>75$</s></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src=<%=require("@img/product-7.png" )%> class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Nefelejcs</h5>
+                                        <p class="card-text">50$ <s>75$</s></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src=<%=require("@img/product-8.png" )%> class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cream roses</h5>
+                                        <p class="card-text">50$ <s>75$</s></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-      </nav>
+    </section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
