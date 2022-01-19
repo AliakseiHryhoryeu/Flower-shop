@@ -46,33 +46,63 @@
         </div>
     </nav>
 
+    <!--==================== CATEGORIES ====================-->
+
+    <div class="categories about__container bg-light py-5">
+        <div class="container-xxl d-flex flex-row">
+            <div class="card col my-3">
+                <div class="card-body categories__all">
+                    <h5 class="card-title">40% off</h5>
+                    <p class="card-text">Best deal’s this weak. Fresh flowers, plants and gifts</p>
+                    <a href="#" class="btn btn-primary">View now</a>
+                </div>
+            </div>
+        </div>
+        <div class="container-xxl d-flex flex-row">
+            <div class="card col me-2">
+                <div class="card-body categories__gifts">
+                    <h5 class="card-title">Nice little gifts</h5>
+                    <p class="card-text">for loved ones</p>
+                    <a href="#" class="btn btn-primary">View now</a>
+                </div>
+            </div>
+            <div class="card col ms-2">
+                <div class="card-body categories__plants">
+                    <h5 class="card-title">Plants</h5>
+                    <p class="card-text">for home comfort</p>
+                    <a href="#" class="btn btn-primary">View now</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
     <!--==================== GALLERY ====================-->
 
-
     <section class="gallery container-fluid bg-light">
         <div class="container-xxl">
-            <div class="gallery__title">
+            <div class="gallery__title d-flex flex-row">
                 <h3>New</h3>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselNewProducts"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                    Previous
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselNewProducts"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                    Next
-                </button>
+                <div class="corousel__controls ms-auto d-flex flex-row">
+                    <button class="gallery__carousel__control px-2" type="button" data-bs-target="#carouselNewProducts"
+                        data-bs-slide="prev">
+                        <img p-5 px-10 src=<%=require("@img/arrow-prev.png" )%> class="gallery__carousel__control-icon" aria-hidden="true" />
+                    </button>
+                    <button class="gallery__carousel__control px-2" type="button" data-bs-target="#carouselNewProducts"
+                        data-bs-slide="next">
+                        <img p-5 px-10 src=<%=require("@img/arrow-next.png" )%> class="gallery__carousel__control-icon" aria-hidden="true" />
+                    </button>
+                </div>
             </div>
+            
             <div id="carouselNewProducts" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row">
                             <div class="col">
                                 <div class="card" style="width: 18rem;">
-                                    <img src=<%=require("@img/product-1.png" )%> class="card-img-top" alt="...">
+                                    <img src=<%=require("@img/product-1-1.png" )%> class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Roses</h5>
                                         <p class="card-text">50$ <s>75$</s></p>
@@ -81,7 +111,7 @@
                             </div>
                             <div class="col">
                                 <div class="card" style="width: 18rem;">
-                                    <img src=<%=require("@img/product-2.png" )%> class="card-img-top" alt="...">
+                                    <img src=<%=require("@img/product-1-2.png" )%> class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Phalaenopsis</h5>
                                         <p class="card-text">50$ <s>75$</s></p>
@@ -90,7 +120,7 @@
                             </div>
                             <div class="col">
                                 <div class="card" style="width: 18rem;">
-                                    <img src=<%=require("@img/product-3.png" )%> class="card-img-top" alt="...">
+                                    <img src=<%=require("@img/product-1-3.png" )%> class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Nefelejcs</h5>
                                         <p class="card-text">50$ <s>75$</s></p>
@@ -99,7 +129,7 @@
                             </div>
                             <div class="col">
                                 <div class="card" style="width: 18rem;">
-                                    <img src=<%=require("@img/product-4.png" )%> class="card-img-top" alt="...">
+                                    <img src=<%=require("@img/product-1-4.png" )%> class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Cream roses</h5>
                                         <p class="card-text">50$ <s>75$</s></p>
@@ -112,7 +142,7 @@
                         <div class="row">
                             <div class="col">
                                 <div class="card" style="width: 18rem;">
-                                    <img src=<%=require("@img/product-5.png" )%> class="card-img-top" alt="...">
+                                    <img src=<%=require("@img/product-1-5.png" )%> class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Roses</h5>
                                         <p class="card-text">50$ <s>75$</s></p>
@@ -121,7 +151,7 @@
                             </div>
                             <div class="col">
                                 <div class="card" style="width: 18rem;">
-                                    <img src=<%=require("@img/product-6.png" )%> class="card-img-top" alt="...">
+                                    <img src=<%=require("@img/product-1-6.png" )%> class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Phalaenopsis</h5>
                                         <p class="card-text">50$ <s>75$</s></p>
@@ -130,7 +160,7 @@
                             </div>
                             <div class="col">
                                 <div class="card" style="width: 18rem;">
-                                    <img src=<%=require("@img/product-7.png" )%> class="card-img-top" alt="...">
+                                    <img src=<%=require("@img/product-1-7.png" )%> class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Nefelejcs</h5>
                                         <p class="card-text">50$ <s>75$</s></p>
@@ -139,7 +169,7 @@
                             </div>
                             <div class="col">
                                 <div class="card" style="width: 18rem;">
-                                    <img src=<%=require("@img/product-8.png" )%> class="card-img-top" alt="...">
+                                    <img src=<%=require("@img/product-1-8.png" )%> class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Cream roses</h5>
                                         <p class="card-text">50$ <s>75$</s></p>
@@ -155,28 +185,26 @@
     </section>
     <section class="gallery container-fluid bg-light">
         <div class="container-xxl">
-            <div class="gallery__title">
+            <div class="gallery__title d-flex flex-row">
                 <h3>Relevant</h3>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselNewProducts"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                    Previous
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselNewProducts"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                    Next
-                </button>
+                <div class="corousel__controls ms-auto d-flex flex-row">
+                    <button class="gallery__carousel__control px-2" type="button" data-bs-target="#carouselRelevantProducts"
+                        data-bs-slide="prev">
+                        <img p-5 px-10 src=<%=require("@img/arrow-prev.png" )%> class="gallery__carousel__control-icon" aria-hidden="true" />
+                    </button>
+                    <button class="gallery__carousel__control px-2" type="button" data-bs-target="#carouselRelevantProducts"
+                        data-bs-slide="next">
+                        <img p-5 px-10 src=<%=require("@img/arrow-next.png" )%> class="gallery__carousel__control-icon" aria-hidden="true" />
+                    </button>
+                </div>
             </div>
-            <div id="carouselNewProducts" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselRelevantProducts" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row">
                             <div class="col">
                                 <div class="card" style="width: 18rem;">
-                                    <img src=<%=require("@img/product-6.png" )%> class="card-img-top" alt="...">
+                                    <img src=<%=require("@img/product-2-1.png" )%> class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Roses</h5>
                                         <p class="card-text">50$ <s>75$</s></p>
@@ -185,7 +213,7 @@
                             </div>
                             <div class="col">
                                 <div class="card" style="width: 18rem;">
-                                    <img src=<%=require("@img/product-7.png" )%> class="card-img-top" alt="...">
+                                    <img src=<%=require("@img/product-2-2.png" )%> class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Phalaenopsis</h5>
                                         <p class="card-text">50$ <s>75$</s></p>
@@ -194,7 +222,7 @@
                             </div>
                             <div class="col">
                                 <div class="card" style="width: 18rem;">
-                                    <img src=<%=require("@img/product-8.png" )%> class="card-img-top" alt="...">
+                                    <img src=<%=require("@img/product-2-3.png" )%> class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Nefelejcs</h5>
                                         <p class="card-text">50$ <s>75$</s></p>
@@ -203,7 +231,7 @@
                             </div>
                             <div class="col">
                                 <div class="card" style="width: 18rem;">
-                                    <img src=<%=require("@img/product-9.png" )%> class="card-img-top" alt="...">
+                                    <img src=<%=require("@img/product-2-4.png" )%> class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Cream roses</h5>
                                         <p class="card-text">50$ <s>75$</s></p>
@@ -216,7 +244,7 @@
                         <div class="row">
                             <div class="col">
                                 <div class="card" style="width: 18rem;">
-                                    <img src=<%=require("@img/product-10.png" )%> class="card-img-top" alt="...">
+                                    <img src=<%=require("@img/product-2-5.png" )%> class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Roses</h5>
                                         <p class="card-text">50$ <s>75$</s></p>
@@ -225,7 +253,7 @@
                             </div>
                             <div class="col">
                                 <div class="card" style="width: 18rem;">
-                                    <img src=<%=require("@img/product-11.png" )%> class="card-img-top" alt="...">
+                                    <img src=<%=require("@img/product-2-6.png" )%> class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Phalaenopsis</h5>
                                         <p class="card-text">50$ <s>75$</s></p>
@@ -234,7 +262,7 @@
                             </div>
                             <div class="col">
                                 <div class="card" style="width: 18rem;">
-                                    <img src=<%=require("@img/product-12.png" )%> class="card-img-top" alt="...">
+                                    <img src=<%=require("@img/product-2-7.png" )%> class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Nefelejcs</h5>
                                         <p class="card-text">50$ <s>75$</s></p>
@@ -243,7 +271,7 @@
                             </div>
                             <div class="col">
                                 <div class="card" style="width: 18rem;">
-                                    <img src=<%=require("@img/product-13.png" )%> class="card-img-top" alt="...">
+                                    <img src=<%=require("@img/product-2-8.png" )%> class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Cream roses</h5>
                                         <p class="card-text">50$ <s>75$</s></p>
@@ -257,6 +285,68 @@
             </div>
         </div>
     </section>
+
+    <!--==================== FOOTER ====================-->
+
+
+    <footer class="container-fluid bg-light">
+        <div class="container-xxl">
+            <div class="row align-items-start py-5">
+                <div class="col">
+                    <h5>Folow us</h5>
+                    <ul class="nav flex-column my-2">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">+1-222-333-4444</a></li>
+                    </ul>
+                    <ul class="nav flex-row nav__social">
+                        <li class="nav-item mb-2 mx-2"><img class="nav-link p-0 text-muted" width="24" height="24"
+                                src=<%=require("@img/social-instagram.png" )%> /></li>
+                        <li class="nav-item mb-2 mx-2"><img class="nav-link p-0 text-muted" width="24" height="24"
+                                src=<%=require("@img/social-whatsapp.png" )%> /></li>
+                        <li class="nav-item mb-2 mx-2"><img class="nav-link p-0 text-muted" width="24" height="24"
+                                src=<%=require("@img/social-facebook.png" )%> /></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h5>Help</h5>
+                    <ul class="nav flex-column ">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Your account</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Order Status</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQ</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Site Map</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Articles</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h5>About us</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Where do we deliver ?</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Our Roses</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Blog</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Wedding flowers</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h5>Legal</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy policy</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terms & Conditions</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Secured Payment</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row row-cols-5 py-2 border-top">
+                <div class="col">
+                    <h5>© Copyright, 2022</h5>
+                </div>
+            </div>
+        </div>
+
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
